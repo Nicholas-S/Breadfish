@@ -1,6 +1,7 @@
 package nl.breadfish.breadfish;
 
 import android.content.Context;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -10,6 +11,8 @@ import android.view.SurfaceHolder;
 public class GameView extends SurfaceView implements SurfaceHolder.Callback
 {
     private MainThread thread;
+
+    private CharacterSprite characterSprite;
 
     public GameView(Context context)
     {
@@ -27,6 +30,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
+        characterSprite = new CharacterSprite(BitmapFactory.decodeResource(getResources(),R.drawable.fish));
         thread.setRunning(true);
         thread.start();
     }
@@ -48,15 +52,10 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback
     @Override
     public void draw(Canvas canvas) {
         super.draw(canvas);
-        if (canvas != null) {
-            canvas.drawColor(Color.WHITE);
-            Paint paint = new Paint();
-            paint.setColor(Color.rgb(250, 0, 0));
-            canvas.drawRect(100, 100, 200, 200, paint);
-        }
+        characterSprite.draw(canvas);
     }
 
     public void update() {
-
+        characterSprite.update();
     }
 }
