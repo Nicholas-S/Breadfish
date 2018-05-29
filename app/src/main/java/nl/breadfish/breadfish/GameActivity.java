@@ -3,7 +3,7 @@ package nl.breadfish.breadfish;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class GameActivity extends AppActivity {
+public class GameActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
