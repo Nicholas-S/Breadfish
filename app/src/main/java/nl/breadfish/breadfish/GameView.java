@@ -5,6 +5,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.view.MotionEvent;
 import android.view.SurfaceView;
 import android.view.SurfaceHolder;
 
@@ -26,6 +27,13 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height)
     {
 
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event)
+    {
+        characterSprite.y = characterSprite.y - (characterSprite.yVelocity * 10);
+        return super.onTouchEvent.event();
     }
 
     @Override
