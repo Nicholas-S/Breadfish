@@ -18,7 +18,7 @@ public class CharacterSprite
     {
         image = bmp;
         x = 100;
-        y = 100;
+        y = 1000;
     }
 
     public void draw(Canvas canvas)

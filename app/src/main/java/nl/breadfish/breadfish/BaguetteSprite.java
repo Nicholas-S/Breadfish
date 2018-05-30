@@ -10,7 +10,6 @@ public class BaguetteSprite
     private Bitmap image;
     private Bitmap image2;
     public int xX, yY;
-    private int xVelocity = 10;
     private int screenHeight = Resources.getSystem().getDisplayMetrics().heightPixels;
 
     public BaguetteSprite (Bitmap bmp, Bitmap bmp2, int x, int y)
