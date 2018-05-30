@@ -10,14 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7521dd1-f192-4073-a436-fe9ad40b76f9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nl/breadfish/breadfish/BaguetteSprite.java" afterPath="$PROJECT_DIR$/app/src/main/java/nl/breadfish/breadfish/BaguetteSprite.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nl/breadfish/breadfish/CharacterSprite.java" afterPath="$PROJECT_DIR$/app/src/main/java/nl/breadfish/breadfish/CharacterSprite.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/nl/breadfish/breadfish/GameView.java" afterPath="$PROJECT_DIR$/app/src/main/java/nl/breadfish/breadfish/GameView.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -174,8 +167,8 @@
       <file leaf-file-name="GameView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/nl/breadfish/breadfish/GameView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+            <state relative-caret-position="238">
+              <caret line="110" column="29" lean-forward="false" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2723,7 +2716,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527639722683</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finished Game">
+      <created>1527659693473</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1527659693473</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2796,7 +2796,8 @@
     <MESSAGE value="Added a sprite for game" />
     <MESSAGE value="Updated Sprite sizes" />
     <MESSAGE value="Created and worked on BaguetteSprite" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created and worked on BaguetteSprite" />
+    <MESSAGE value="Finished Game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -3182,8 +3183,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/nl/breadfish/breadfish/GameView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        <state relative-caret-position="238">
+          <caret line="110" column="29" lean-forward="false" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

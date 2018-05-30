@@ -108,7 +108,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback
         bmp = BitmapFactory.decodeResource(getResources(),R.drawable.baguette);
         bmp2 = BitmapFactory.decodeResource(getResources(),R.drawable.baguette);
 
-        for(int i = 0; i < 100; i++)
+        for(int i = 0; i < 50; i++)
         {
             baguetteList.add(new BaguetteSprite(bmp, bmp2, 500 + (500 * i), r.nextInt((max - min) + 1) + min));
         }
