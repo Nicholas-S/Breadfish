@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private int videoWidth = 640;
     private int videoHeight = 360;
 
+    VideoView videoview;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,9 +32,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, GameActivity.class));
             }
         });
-        VideoView videoview = (VideoView) findViewById(R.id.videoview);
+        videoview = findViewById(R.id.videoview);
         Uri uri = Uri.parse("https://breadfish.nl/src/breadfish.mp4");
         videoview.setVideoURI(uri);
+        videoview.start();
+    }
+
+    @Override
+    public void onResume()
+    {
+        super.onResume();
         videoview.start();
     }
 
