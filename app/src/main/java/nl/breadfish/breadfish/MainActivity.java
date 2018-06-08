@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         Uri uri = Uri.parse("https://breadfish.nl/src/breadfish.mp4");
         videoview.setVideoURI(uri);
         videoview.start();
+        videoview.requestFocus();
+        videoview.resolveAdjustedSize(640, 360);
     }
 
     @Override
@@ -43,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onResume();
         videoview.start();
+        videoview.requestFocus();
+        videoview.resolveAdjustedSize(640, 360);
     }
 
     @Override
