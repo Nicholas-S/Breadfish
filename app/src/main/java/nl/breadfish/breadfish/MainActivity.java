@@ -11,6 +11,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,12 +33,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, GameActivity.class));
             }
         });
+        final TextView textView = findViewById(R.id.bufferView);
         videoview = findViewById(R.id.videoview);
         Uri uri = Uri.parse("https://breadfish.nl/src/breadfish.mp4");
         videoview.setVideoURI(uri);
         videoview.start();
         videoview.requestFocus();
         videoview.resolveAdjustedSize(640, 360);
+        textView.setEnabled(true);
+        if(videoview.isPlaying())
+        {
+            textView.setEnabled(false);
+        }
     }
 
     @Override
